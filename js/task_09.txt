@@ -1,0 +1,20 @@
+№1)
+(2 < 3) && (3 > 4) || true
+true && false || true
+false && true
+Ответ: true
+
+
+№2)
+!true && (!true || 100 != 5 * 5)
+false && (100 != 5 * 5)
+false && (true * 5)
+false && (5)
+Ответ: false
+
+
+№3)
+("123" == 123) || ((10 <= 10) && ('' '' === false))
+true || true && unexpected string
+true && unexpected string
+Ответ: unexpected string
