@@ -32,13 +32,11 @@ function rotLeft(a, d) {
     for (var i = 0; i < a.length; i++) {
         if (a[i] === a[d]) {
             result = a.slice(d, a.length);
-            del = result.splice(d, a.length);
+            del = result.splice(d, a);
         }
     }
-
     a = a.splice(0, d);
-    return (result + "," + a).split(',');
-
+    return result.concat(a);
 }
 
 function main() {
